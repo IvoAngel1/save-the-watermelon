@@ -1,10 +1,7 @@
-# Pseudocode
-
+Pseudocode
 these are the steps for the game. not the actual python code.
 
-## start
-
-```text
+start
 start
 set wins, losses and streaks to 0
 show game title
@@ -18,11 +15,7 @@ while player wants to play
 
 show goodbye message
 end
-```
-
-## 1 round
-
-```text
+1 round
 get fruit
 get slices from word length
 set guessed letters to empty
@@ -51,31 +44,19 @@ repeat
     if slices are 0
         show the answer and return False
 until game ends
-```
-
-## check input
-
-```text
+check input
 remove spaces and make guess lowercase
 if empty -> reject
 if more than 1 letter -> reject
 if not a-z -> reject
 if already guessed -> reject
 otherwise -> accept
-```
-
-## show the word
-
-```text
+show the word
 for each letter in the fruit
     if letter was guessed -> show letter
     otherwise -> show _
 put spaces between letters
-```
-
-## score
-
-```text
+score
 if player won
     add 1 win
     add 1 to streak
@@ -83,13 +64,8 @@ if player won
 else
     add 1 loss
     reset streak to 0
-```
-
-## play again
-
-```text
+play again
 ask y or n
 y / yes -> play again
 n / no -> quit
 anything else -> ask again
-```
